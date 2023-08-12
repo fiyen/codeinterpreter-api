@@ -2,8 +2,8 @@ python-dotenv==1.*
 openai==0.27.*
 langchain==0.0.242.*
 codeboxapi>=0.0.18
-streamlit==1.*; optional
-jupyter-kernel-gateway==2.*; optional
+streamlit==1.*
+jupyter-kernel-gateway==2.*
 Pillow==9.*; optional
 
 pytest==7.*
