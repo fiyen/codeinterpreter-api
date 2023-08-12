@@ -10,8 +10,8 @@ COPY . /app
 # 安装后端依赖
 RUN pip install -r requirements.txt
 
-# 进入项目的 frontend 文件夹
-WORKDIR /app/frontend
+# # 进入项目的 frontend 文件夹
+# WORKDIR /app/frontend
 
 # 运行 Python API
-CMD ["python", "app.py"]
+CMD ["python", "fontend/app.py"]
