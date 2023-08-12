@@ -10,9 +10,6 @@ COPY . /app
 # 进入项目的 frontend 文件夹
 WORKDIR /app/frontend
 
-# 安装前端依赖（如果有需要，请根据实际情况修改）
-RUN npm install
-
 # 返回工作目录
 WORKDIR /app
 
