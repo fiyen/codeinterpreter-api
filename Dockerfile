@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 # WORKDIR /app/frontend
 
 # 运行 Python API
-CMD ["python", "app.py"]
+CMD ["streamlit", "run", "app.py"]
