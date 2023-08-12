@@ -1,14 +1,13 @@
-python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-python-dotenv = "^1"
-openai = "^0.27"
-langchain = "^0.0.242"
-codeboxapi = ">=0.0.18"
-streamlit = { version = "^1", optional = true }
-jupyter-kernel-gateway = { version = "^2", optional = true }
-Pillow = { version = "^9", optional = true }
+python-dotenv==1.*
+openai==0.27.*
+langchain==0.0.242.*
+codeboxapi>=0.0.18
+streamlit==1.*; optional
+jupyter-kernel-gateway==2.*; optional
+Pillow==9.*; optional
 
-pytest = "^7"
-mypy = "^1.4"
-black = "^23"
-flake8 = "^6"
-pre-commit = "^3.3"
+pytest==7.*
+mypy==1.4.*
+black==23.*
+flake8==6.*
+pre-commit==3.3.*
