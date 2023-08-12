@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # 安装 Python 依赖
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # # 进入项目的 frontend 文件夹
