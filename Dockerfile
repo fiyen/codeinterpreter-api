@@ -7,8 +7,16 @@ WORKDIR /app
 # 复制项目所有内容到工作目录
 COPY . /app
 
-# 安装后端依赖
-RUN pip install -r requirements.txt
+# 安装 Python 依赖
+RUN pip install toml
+
+# 读取 TOML 文件并安装依赖
+RUN python -c "import toml; \
+              with open('pyproject.toml') as f: \
+                  config = toml.load(f); \
+              dependencies = config['dependencies']; \
+              for dependency in dependencies: \
+                  pip install {dependency}"
 
 # # 进入项目的 frontend 文件夹
 # WORKDIR /app/frontend
