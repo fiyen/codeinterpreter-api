@@ -20,4 +20,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 # 运行 Python API
-CMD ["python", "api.py"]
+CMD ["python", "app.py"]
