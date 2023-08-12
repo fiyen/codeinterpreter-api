@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 # WORKDIR /app/frontend
 
 # 运行 Python API
-CMD ["python", "fontend/app.py"]
+CMD ["python", "frontend/app.py"]
